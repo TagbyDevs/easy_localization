@@ -263,6 +263,8 @@ class CodegenLoader extends AssetLoader{
 
     final result = json.decode(await fileData.readAsString());
 
+
+
     Map<String, dynamic>? data = result is List<dynamic>
         ? convertJsonListToMap(result)
         : result;
